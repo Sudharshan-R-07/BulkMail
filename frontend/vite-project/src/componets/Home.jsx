@@ -31,7 +31,7 @@ const Home = () => {
 
     function send(){
         setstatus(true)
-        axios.post("http://localhost:5000/sendmail",{msg:msg,emaillist:emaillist})
+        axios.post("https://bulkmail-1-l21v.onrender.com",{msg:msg,emaillist:emaillist})
         .then(function(data){
             if(data.data===true){
                 alert("Email Send Success")
