@@ -16,7 +16,7 @@ mongoose.connect("mongodb+srv://sudharshan:HUs3j9X5m9Z7g2c4@cluster0.lavdlzh.mon
     
 
 const credential = mongoose.model("credential",{},"bulkmail");
-app.post("/sendmail", function (req, res) {
+app.post("/", function (req, res) {
     var msg = req.body.msg
     var emailList = req.body.emaillist
     
